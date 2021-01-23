@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t emnkmxx/followme:v3.0 .
+  - docker build -t emnkmxx/followme:v4.0 .
 script:
   - echo "$password" | docker login -u "$username" --password-stdin
   - docker images
